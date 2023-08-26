@@ -12,7 +12,12 @@ class FibannaciSeriesReverse
 			c=a+b;
 			
 		}
-		
+		if(c>10){
+			c=b;
+			b=a;
+			a=c-b;
+		}
+
 		
 
 	}
