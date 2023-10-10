@@ -1,14 +1,21 @@
 package pratice_problems.recurssion;
+
 import java.util.Scanner;
+
 public class sample {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a day");
-        String weekday = sc.next();
-        if(weekday.equalsIgnoreCase("sunday") || weekday.equalsIgnoreCase("saturday")){
-            System.out.println("it's a weekend");
-        } else{
-            System.out.println("it's a weekday");
+        
+        for(int i=50;i<100;i++){
+            boolean isPrime = true;
+            for( int j = 2;j <i-1;j++){
+                if(i%j == 0){
+                    isPrime = false;
+                    break;
+                }
+            }
+            if(isPrime){
+                System.out.print(i+" ");
+            }
         }
     }
 }
