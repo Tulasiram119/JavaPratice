@@ -1,5 +1,5 @@
 import java.util.*;
-public class LinkedList {
+public class LinkedList implements Queue<BinaryTrees.Node> {
     public static class Node{
         int data;
         Node next;
